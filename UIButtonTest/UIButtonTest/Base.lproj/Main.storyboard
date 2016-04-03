@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNY-fT-DgI">
-                                <rect key="frame" x="192" y="331" width="42" height="45.5"/>
+                                <rect key="frame" x="192" y="306" width="42" height="45.5"/>
                                 <state key="normal" title="+" image="plus_normal.png"/>
                                 <state key="highlighted" image="plus_highlighted.png"/>
                                 <connections>
@@ -61,11 +61,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNd-ty-dU6">
-                                <rect key="frame" x="249" y="322" width="57" height="63"/>
+                                <rect key="frame" x="249" y="299" width="57" height="63"/>
                                 <state key="normal" title="-" image="minus_normal.png"/>
                                 <state key="highlighted" image="minus_highlighted.png"/>
                                 <connections>
                                     <action selector="scalingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lhn-r0-sBd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrp-JJ-dPd">
+                                <rect key="frame" x="192" y="378" width="42" height="45.5"/>
+                                <state key="normal" title="+" image="left_rotate_normal.png"/>
+                                <state key="highlighted" image="left_rotate_highlighted.png"/>
+                                <connections>
+                                    <action selector="rotateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="92S-fF-1MB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hn-Hu-xlC">
+                                <rect key="frame" x="254" y="380" width="46" height="43"/>
+                                <state key="normal" title="-" image="right_rotate_normal.png"/>
+                                <state key="highlighted" image="right_rotate_highlighted.png"/>
+                                <connections>
+                                    <action selector="rotateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwr-Pv-yA1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,11 +105,15 @@
         <image name="left_disable.png" width="96" height="96"/>
         <image name="left_highlighted.png" width="96" height="96"/>
         <image name="left_normal.png" width="96" height="96"/>
+        <image name="left_rotate_highlighted.png" width="96" height="96"/>
+        <image name="left_rotate_normal.png" width="96" height="96"/>
         <image name="minus_highlighted.png" width="96" height="96"/>
         <image name="minus_normal.png" width="96" height="96"/>
         <image name="plus_highlighted.png" width="96" height="96"/>
         <image name="plus_normal.png" width="96" height="96"/>
         <image name="right_normal.png" width="96" height="96"/>
+        <image name="right_rotate_highlighted.png" width="96" height="96"/>
+        <image name="right_rotate_normal.png" width="96" height="96"/>
         <image name="top_normal.png" width="96" height="96"/>
     </resources>
 </document>

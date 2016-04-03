@@ -52,4 +52,8 @@
     self.myImageView.transform=CGAffineTransformScale(self.myImageView.transform, scale, scale);
 }
 
+- (IBAction)rotateAction:(UIButton *)sender {
+    CGFloat angle=(sender.tag==1)?-0.2:0.2;
+    self.myImageView.transform=CGAffineTransformRotate(self.myImageView.transform, angle);
+}
 @end
