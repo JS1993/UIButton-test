@@ -20,52 +20,52 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_5138" translatesAutoresizingMaskIntoConstraints="NO" id="kQO-IM-ehF">
                                 <rect key="frame" x="66" y="57" width="189" height="140"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oV-nh-52H">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oV-nh-52H">
                                 <rect key="frame" x="20" y="334" width="39" height="37"/>
                                 <state key="normal" title="&lt;" image="left_normal.png"/>
                                 <state key="disabled" image="left_disable.png"/>
                                 <state key="highlighted" image="left_highlighted.png"/>
                                 <connections>
-                                    <action selector="moveLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCS-8M-Af9"/>
+                                    <action selector="moveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nX-9U-vdB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk1-iA-VKN">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk1-iA-VKN">
                                 <rect key="frame" x="54" y="293" width="35" height="40"/>
                                 <state key="normal" title="^" image="top_normal.png"/>
                                 <connections>
-                                    <action selector="moveUP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ri-lO-ceG"/>
+                                    <action selector="moveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cL-QP-FCY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMg-c0-8Rn">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMg-c0-8Rn">
                                 <rect key="frame" x="54" y="372" width="35" height="37"/>
                                 <state key="normal" title="V" image="bottom_normal.png"/>
                                 <state key="disabled" image="bottom_disable.png"/>
                                 <state key="highlighted" image="bottom_highlighted.png"/>
                                 <connections>
-                                    <action selector="moveDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGl-gw-yqQ"/>
+                                    <action selector="moveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Igk-VL-sAK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VW-C9-dFY">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VW-C9-dFY">
                                 <rect key="frame" x="84" y="331" width="39" height="40"/>
                                 <state key="normal" title="&gt;" image="right_normal.png"/>
                                 <connections>
-                                    <action selector="moveRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3hf-5d-hC2"/>
+                                    <action selector="moveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4m-Hv-PLz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNY-fT-DgI">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNY-fT-DgI">
                                 <rect key="frame" x="192" y="331" width="42" height="45.5"/>
                                 <state key="normal" title="+" image="plus_normal.png"/>
                                 <state key="highlighted" image="plus_highlighted.png"/>
                                 <connections>
-                                    <action selector="imageViewEnlarge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x09-WV-iMh"/>
+                                    <action selector="scalingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Two-1Q-rH1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNd-ty-dU6">
-                                <rect key="frame" x="250" y="322" width="57" height="63"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNd-ty-dU6">
+                                <rect key="frame" x="249" y="322" width="57" height="63"/>
                                 <state key="normal" title="-" image="minus_normal.png"/>
                                 <state key="highlighted" image="minus_highlighted.png"/>
                                 <connections>
-                                    <action selector="imageViewShrink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jd-wr-8tb"/>
+                                    <action selector="scalingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lhn-r0-sBd"/>
                                 </connections>
                             </button>
                         </subviews>

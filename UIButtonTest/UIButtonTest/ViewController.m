@@ -10,36 +10,46 @@
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *myImageView;
-@property(nonatomic)int x;
-@property(nonatomic)int y;
-@property(nonatomic)CGPoint* centerPoint;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //初始化点击按钮图片的x,y的移动值和放大值
-    self.x=10;
-    self.y=10;
 }
-- (IBAction)moveUP:(UIButton *)sender {
-    self.myImageView.center=CGPointMake(self.myImageView.center.x, self.myImageView.center.y-self.y);
+
+- (IBAction)moveAction:(UIButton *)sender {
+    CGAffineTransform trans=self.myImageView.transform;
+    switch (sender.tag) {
+        case 1:
+            self.myImageView.transform=CGAffineTransformTranslate(trans, 0, -20);
+            break;
+        case 2:
+            self.myImageView.transform=CGAffineTransformTranslate(trans, 0, +20);
+            break;
+        case 3:
+            self.myImageView.transform=CGAffineTransformTranslate(trans, -20, 0);
+            break;
+        case 4:
+            self.myImageView.transform=CGAffineTransformTranslate(trans, +20, 0);
+            break;
+        default:
+            break;
+    }
 }
-- (IBAction)moveDown:(UIButton *)sender {
-    self.myImageView.center=CGPointMake(self.myImageView.center.x, self.myImageView.center.y+self.y);
-}
-- (IBAction)moveRight:(UIButton *)sender {
-    self.myImageView.center=CGPointMake(self.myImageView.center.x+self.x, self.myImageView.center.y);
-}
-- (IBAction)moveLeft:(id)sender {
-    self.myImageView.center=CGPointMake(self.myImageView.center.x-self.x, self.myImageView.center.y);
-}
-- (IBAction)imageViewEnlarge:(UIButton *)sender {
-    self.myImageView.bounds=CGRectMake(0, 0, self.myImageView.bounds.size.width+10, self.myImageView.bounds.size.height+10);
-}
-- (IBAction)imageViewShrink:(UIButton *)sender {
-    self.myImageView.bounds=CGRectMake(0, 0, self.myImageView.bounds.size.width-10, self.myImageView.bounds.size.height-10);
+- (IBAction)scalingAction:(UIButton *)sender {
+//    switch (sender.tag) {
+//        case 1:
+//            self.myImageView.transform=CGAffineTransformScale(self.myImageView.transform, 1.1, 1.1);
+//            break;
+//        case 2:
+//            self.myImageView.transform=CGAffineTransformScale(self.myImageView.transform, 0.9, 0.9);
+//            break;
+//        default:
+//            break;
+//    }
+    CGFloat scale=(sender.tag==1)?1.1:0.9;
+    self.myImageView.transform=CGAffineTransformScale(self.myImageView.transform, scale, scale);
 }
 
 @end
